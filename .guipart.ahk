@@ -11,6 +11,10 @@
 
     OnMessage( 0x138, "WM_CTLCOLOR" ), OnMessage( 0x133, "WM_CTLCOLOR" )
 
+    /*
+        could have probably made this procedural but im lazy, maybe in the future
+    */
+
         Gui, Add, Text, x22 y29 w120 h20 c000000 +BackgroundTrans, Normal Mode
         Gui, Add, Edit, x42 y49 w80 h20 vNormalBar gRefreshColors limit6 Uppercase r1, % Retrieve("NormalBar")
         Gui, Add, Edit, x22 y49 w20 h20 +Center c000000 Disabled r1 Readonly vHash1, #
@@ -138,8 +142,9 @@
     ;---- Check for Update ----;
 
     RunWait, ping.exe www.google.com -n 1,, Hide UseErrorlevel
-        If !Errorlevel {
-            If("0.9" != CurrentVer) {
+        If(!Errorlevel) {
+            UpdateVer := url2var("https://raw.githubusercontent.com/Ikszyon/GD-Custom-Patcher/main/VERSION")
+            If(UpdateVer != CurrentVer) {
                 SB_SetText("There is an Update available! Click the button to open the Github repository")
                 StatusBar_TT := "https://github.com/Ikszyon/GD-Custom-Patcher/releases"
                 GuiControl, show, UpdateButton
@@ -152,6 +157,6 @@
 
     }
 
-;-- Labels --;
+;---- Labels ----;
 
 #include .guilabels.ahk

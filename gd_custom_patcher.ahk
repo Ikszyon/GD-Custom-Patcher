@@ -4,6 +4,7 @@
 #include <HexEdit>
 #include <tt>
 #include <cobj>
+#include <url2var>
 #include .ctlcolor.ahk
 
 
