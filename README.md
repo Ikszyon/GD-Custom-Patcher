@@ -11,6 +11,8 @@ I originally wanted to make something similar in C# but then realized I hate mak
 Then I went on to embed the common language runtime inside an AHK script that houses the GUI and then have the other functionality in C#.
 I don't really know what happened next but I decided to just remake the entire thing in AHK.
 
+If you want to compile this yourself then compile gd_custom_patcher.ahk
+
 <b>Other Colors im looking for:</b>
 
 There are a few colors that I would like to include in the custom patcher.
