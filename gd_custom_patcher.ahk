@@ -22,7 +22,7 @@ SetWorkingDir %A_ScriptDir%
 ;@Ahk2Exe-SetName GDColorPatcher
 ;@Ahk2Exe-SetDescription Customize Hard Coded Colors In Geometry Dash; Made By Ikszyon#9500
 ;@Ahk2Exe-SetVersion 1.0
-;@Ahk2Exe-SetCopyright Ikszyon
+;@Ahk2Exe-SetCopyright Ikszyon (c) 2022
 
 ;-- MAIN SCRIPT --;
 
