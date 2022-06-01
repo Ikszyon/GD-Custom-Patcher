@@ -50,6 +50,4 @@ __ValidArgs :=  ["NormalBar"
 #include .cmdpart.ahk
 #include .guipart.ahk
 
-F10::Reload
-
 ;-- MAIN SCRIPT END --;
